@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GamanSagaya</title>
+
+  <!-- BotUI & Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./CSS/chatbot.css" />
+</head>
+<body>
+
+<h2>🚍 Gaman Sagaya</h2>
+
+<!-- Button group with inline theme toggle -->
+<div id="button-group">
+  <button id="theme-toggle">🌙</button>
+  <button id="refresh-chat"><span class="icon">➕</span></button>
+</div>
+
+<!-- Chatbot container -->
+<div id="botui-app"><bot-ui></bot-ui></div>
+
+<!-- Vue and BotUI Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/botui/build/botui.min.js"></script>
+
+<!-- Custom JS -->
+<script src="./JS/chatbot.js"></script>
+
+<!-- Restart Chat Button -->
+<script>
+  document.getElementById("refresh-chat").addEventListener("click", () => {
+    location.reload();
+  });
+</script>
+
+</body>
+</html>

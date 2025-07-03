@@ -1,0 +1,152 @@
+@keyframes busDriveWithSmoke {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(250px); /* instead of 100% of screen */
+  }
+}
+
+.bus-driving {
+  animation: busDriveWithSmoke 4s linear forwards;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.smoke-container {
+  position: absolute;
+  left: -10px;
+  top: 15px;
+  height: 10px;
+  width: 10px;
+}
+
+/* Each puff */
+.smoke-puff {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: orange;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: smokeTrail 1.2s ease-out forwards;
+}
+
+@keyframes smokeTrail {
+  0% {
+    transform: translateX(0) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-30px) scale(2);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+.banner-logo {
+  max-height: 500px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+/* Existing styling */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+#search-form {
+  margin-top: 1rem;
+}
+
+#search-form input,
+#search-form button {
+  margin-bottom: 1rem;
+}
+
+#search-form h5 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+button.btn:not(.btn-warning):hover {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+.table tbody tr td.normal-fare {
+  background-color: orange !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.table tbody tr td.semi-fare {
+  background-color: blue !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.table tbody tr td.ac-fare {
+  background-color: green !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.table-dark th {
+  background-color: black !important;
+  color: white !important;
+}
+
+.custom-orange-spinner {
+  color: orange !important;
+  border-color: orange !important;
+  border-right-color: transparent !important;
+}
+
+#btnNormalSemiAC:hover {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+#btnHighway:hover {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+  color: #fff !important;
+}
+
